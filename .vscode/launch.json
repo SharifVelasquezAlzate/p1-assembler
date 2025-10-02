@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/assembler",
-            "args": ["spec_0.as", "output"],
+            "args": ["mult.as", "output"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [

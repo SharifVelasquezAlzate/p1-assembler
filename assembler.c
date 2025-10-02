@@ -169,8 +169,8 @@ bool checkInstructionErrors(char* opcode, char* arg0, char* arg1, char* arg2, ch
         ((arg0i < 0 || arg0i > 7) || (arg1i < 0 || arg1i > 7))                             ||
         // (x <= 0xFFFF) iff x \in [-32768, 32767] as a 16-bit 2's complement int
         (!isNumber(arg2))
-            ? (arg2i - refAddr - 1 <= 0xFFFF)
-            : arg2i <= 0xFFFF                                                                           
+            ? (arg2i - refAddr - 1 >= 0xFFFF)
+            : arg2i >= 0xFFFF                                                                           
         );
     }
     // --- J-type Instructions
